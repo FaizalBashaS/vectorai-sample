@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vector AI - Solutions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+    :root {
+      --primary-color: #0d9488;--secondary-color: #67e8f9;--background-color: #0f172a;--text-primary: #f8fafc;--text-secondary: #94a3b8;--accent-color: #8b5cf6;--border-color: #334155;--card-background: #1e293b;}
+    body {
+      font-family: 'Work Sans', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-primary);
+    }
+    .futuristic-glow {
+      box-shadow: 0 0 15px 5px rgba(13, 148, 136, 0.4), 0 0 5px 1px rgba(103, 232, 249, 0.4);
+      transition: all 0.3s ease-in-out;
+    }
+    .futuristic-glow:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px 8px rgba(13, 148, 136, 0.6), 0 0 10px 2px rgba(103, 232, 249, 0.6);
+    }
+    .btn-glow:hover {
+        box-shadow: 0 0 15px 2px var(--primary-color);
+    }
+  </style>
+</head>
+<body class="bg-[var(--background-color)] text-[var(--text-primary)]">
+<div class="relative flex size-full min-h-screen flex-col overflow-x-hidden">
+<div class="flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[var(--border-color)] px-10 py-4 sticky top-0 z-50 bg-[var(--background-color)]/80 backdrop-blur-sm">
+<div class="flex items-center gap-4">
+<svg class="h-8 w-8 text-[var(--primary-color)]" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2L2 7V17L12 22L22 17V7L12 2Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M2 7L12 12L22 7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M12 22V12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M17 4.5L7 9.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+<path d="M17 19.5L7 14.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+<h2 class="text-[var(--text-primary)] text-xl font-bold" style='font-family: "Space Grotesk", sans-serif;'>Vector AI</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8 text-sm font-medium text-[var(--text-secondary)]">
+<a class="hover:text-[var(--text-primary)] transition-colors" href="#">Product</a>
+<a class="text-[var(--text-primary)] font-semibold" href="#">Solutions</a>
+<a class="hover:text-[var(--text-primary)] transition-colors" href="#">Pricing</a>
+<a class="hover:text-[var(--text-primary)] transition-colors" href="#">Resources</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-[var(--primary-color)] text-[var(--text-primary)] text-sm font-bold leading-normal tracking-wide rounded-lg h-10 px-6 transition-all duration-300 ease-in-out btn-glow">
+<span>Get Started</span>
+</button>
+</div>
+</header>
+<main class="flex-1">
+<section class="py-20 md:py-32 text-center relative overflow-hidden">
+<div class="absolute inset-0 bg-grid-slate-700/30 [mask-image:linear-gradient(to_bottom,white_5%,transparent_80%)]"></div>
+<div class="container mx-auto px-4 relative z-10">
+<div class="flex flex-col items-center">
+<div class="w-full max-w-4xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
+<div class="lg:w-1/2 text-left">
+<h1 class="text-5xl md:text-7xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-[var(--secondary-color)] to-[var(--accent-color)] mb-6" style='font-family: "Space Grotesk", sans-serif;'>
+                            Our Solutions. <br/> Your Advantage.
+                        </h1>
+<p class="text-[var(--text-secondary)] text-lg md:text-xl max-w-xl">
+                            Vector AI provides cutting-edge solutions designed to give your business a competitive edge. Our technology is built for speed, security, and scalability.
+                        </p>
+</div>
+<div class="lg:w-1/2 flex justify-center items-center">
+<div class="w-80 h-80 relative animate-spin-slow">
+<div class="absolute inset-0 border-2 border-[var(--border-color)] rounded-full"></div>
+<div class="absolute inset-4 border-2 border-[var(--border-color)] border-dashed rounded-full"></div>
+<div class="absolute inset-10 border-2 border-[var(--primary-color)]/50 rounded-full"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-[var(--primary-color)]/20 rounded-full flex items-center justify-center">
+<svg class="w-10 h-10 text-[var(--secondary-color)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5 3v4M3 5h4M4 17v4M2 19h4M17 3v4M19 5h-4M20 17v4M22 19h-4M12 9v6M9 12h6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 p-3 bg-[var(--card-background)] rounded-full border border-[var(--border-color)]"><svg class="text-[var(--secondary-color)]" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M215.79,118.17a8,8,0,0,0-5-5.66L153.18,90.9l14.66-73.33a8,8,0,0,0-13.69-7l-112,120a8,8,0,0,0,3,13l57.63,21.61L88.16,238.43a8,8,0,0,0,13.69,7l112-120A8,8,0,0,0,215.79,118.17ZM109.37,214l10.47-52.38a8,8,0,0,0-5-9.06L62,132.71l84.62-90.66L136.16,94.43a8,8,0,0,0,5,9.06l52.8,19.8Z"></path></svg></div>
+<div class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 p-3 bg-[var(--card-background)] rounded-full border border-[var(--border-color)]"><svg class="text-[var(--secondary-color)]" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M208,40H48A16,16,0,0,0,32,56v58.77c0,89.61,75.82,119.34,91,124.39a15.53,15.53,0,0,0,10,0c15.2-5.05,91-34.78,91-124.39V56A16,16,0,0,0,208,40Zm0,74.79c0,78.42-66.35,104.62-80,109.18-13.53-4.51-80-30.69-80-109.18V56l160,0Z"></path></svg></div>
+<div class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 p-3 bg-[var(--card-background)] rounded-full border border-[var(--border-color)]"><svg class="text-[var(--secondary-color)]" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M213.66,181.66l-32,32a8,8,0,0,1-11.32-11.32L188.69,184H48a8,8,0,0,1,0-16H188.69l-18.35-18.34a8,8,0,0,1,11.32-11.32l32,32A8,8,0,0,1,213.66,181.66Zm-139.32-64a8,8,0,0,0,11.32-11.32L67.31,88H208a8,8,0,0,0,0-16H67.31L85.66,53.66A8,8,0,0,0,74.34,42.34l-32,32a8,8,0,0,0,0,11.32Z"></path></svg></div>
+<div class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 p-3 bg-[var(--card-background)] rounded-full border border-[var(--border-color)]"><svg class="text-[var(--secondary-color)]" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm88-29.84q.06-2.16,0-4.32l14.92-18.64a8,8,0,0,0,1.48-7.06,107.21,107.21,0,0,0-10.88-26.25,8,8,0,0,0-6-3.93l-23.72-2.64q-1.48-1.56-3-3L186,40.54a8,8,0,0,0-3.94-6,107.71,107.71,0,0,0-26.25-10.87,8,8,0,0,0-7.06,1.49L130.16,40Q128,40,125.84,40L107.2,25.11a8,8,0,0,0-7.06-1.48A107.6,107.6,0,0,0,73.89,34.51a8,8,0,0,0-3.93,6L67.32,64.27q-1.56,1.49-3,3L40.54,70a8,8,0,0,0-6,3.94,107.71,107.71,0,0,0-10.87,26.25,8,8,0,0,0,1.49,7.06L40,125.84Q40,128,40,130.16L25.11,148.8a8,8,0,0,0-1.48,7.06,107.21,107.21,0,0,0,10.88,26.25,8,8,0,0,0,6,3.93l23.72,2.64q1.49,1.56,3,3L70,215.46a8,8,0,0,0,3.94,6,107.71,107.71,0,0,0,26.25,10.87,8,8,0,0,0,7.06-1.49L125.84,216q2.16.06,4.32,0l18.64,14.92a8,8,0,0,0,7.06,1.48,107.21,107.21,0,0,0,26.25-10.88,8,8,0,0,0,3.93-6l2.64-23.72q1.56-1.48,3-3L215.46,186a8,8,0,0,0,6-3.94,107.71,107.71,0,0,0,10.87-26.25,8,8,0,0,0-1.49-7.06Zm-16.1-6.5a73.93,73.93,0,0,1,0,8.68,8,8,0,0,0,1.74,5.48l14.19,17.73a91.57,91.57,0,0,1-6.23,15L187,173.11a8,8,0,0,0-5.1,2.64,74.11,74.11,0,0,1-6.14,6.14,8,8,0,0,0-2.64,5.1l-2.51,22.58a91.32,91.32,0,0,1-15,6.23l-17.74-14.19a8,8,0,0,0-5-1.75h-.48a73.93,73.93,0,0,1-8.68,0,8,8,0,0,0-5.48,1.74L100.45,215.8a91.57,91.57,0,0,1-15-6.23L82.89,187a8,8,0,0,0-2.64-5.1,74.11,74.11,0,0,1-6.14-6.14,8,8,0,0,0-5.1-2.64L46.43,170.6a91.32,91.32,0,0,1-6.23-15l14.19-17.74a8,8,0,0,0,1.74-5.48,73.93,73.93,0,0,1,0-8.68,8,8,0,0,0-1.74-5.48L40.2,100.45a91.57,91.57,0,0,1,6.23-15L69,82.89a8,8,0,0,0,5.1-2.64,74.11,74.11,0,0,1,6.14-6.14A8,8,0,0,0,82.89,69L85.4,46.43a91.32,91.32,0,0,1,15-6.23l17.74,14.19a8,8,0,0,0,5.48,1.74,73.93,73.93,0,0,1,8.68,0,8,8,0,0,0,5.48-1.74L155.55,40.2a91.57,91.57,0,0,1,15,6.23L173.11,69a8,8,0,0,0,2.64,5.1,74.11,74.11,0,0,1,6.14,6.14,8,8,0,0,0,5.1,2.64l22.58,2.51a91.32,91.32,0,0,1,6.23,15l-14.19,17.74A8,8,0,0,0,199.87,123.66Z"></path></svg></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 md:py-28 bg-[var(--background-color)]">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="flex flex-col gap-4 rounded-xl border border-[var(--border-color)] bg-[var(--card-background)] p-6 futuristic-glow">
+<div class="w-12 h-12 rounded-lg bg-[var(--primary-color)]/20 flex items-center justify-center">
+<svg class="text-[var(--primary-color)]" fill="currentColor" height="28px" viewBox="0 0 256 256" width="28px" xmlns="http://www.w3.org/2000/svg"><path d="M215.79,118.17a8,8,0,0,0-5-5.66L153.18,90.9l14.66-73.33a8,8,0,0,0-13.69-7l-112,120a8,8,0,0,0,3,13l57.63,21.61L88.16,238.43a8,8,0,0,0,13.69,7l112-120A8,8,0,0,0,215.79,118.17ZM109.37,214l10.47-52.38a8,8,0,0,0-5-9.06L62,132.71l84.62-90.66L136.16,94.43a8,8,0,0,0,5,9.06l52.8,19.8Z"></path></svg>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-[var(--text-primary)] text-xl font-bold leading-tight" style='font-family: "Space Grotesk", sans-serif;'>Speed &amp; Efficiency</h3>
+<p class="text-[var(--text-secondary)] text-base font-normal leading-relaxed">
+                    Accelerate your operations with AI that processes data at lightning speed, enabling faster decision-making.
+                  </p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-[var(--border-color)] bg-[var(--card-background)] p-6 futuristic-glow">
+<div class="w-12 h-12 rounded-lg bg-[var(--primary-color)]/20 flex items-center justify-center">
+<svg class="text-[var(--primary-color)]" fill="currentColor" height="28px" viewBox="0 0 256 256" width="28px" xmlns="http://www.w3.org/2000/svg"><path d="M208,40H48A16,16,0,0,0,32,56v58.77c0,89.61,75.82,119.34,91,124.39a15.53,15.53,0,0,0,10,0c15.2-5.05,91-34.78,91-124.39V56A16,16,0,0,0,208,40Zm0,74.79c0,78.42-66.35,104.62-80,109.18-13.53-4.51-80-30.69-80-109.18V56l160,0Z"></path></svg>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-[var(--text-primary)] text-xl font-bold leading-tight" style='font-family: "Space Grotesk", sans-serif;'>Security &amp; Reliability</h3>
+<p class="text-[var(--text-secondary)] text-base font-normal leading-relaxed">
+                    Protect your valuable data with our robust security measures, ensuring compliance and maintaining customer trust.
+                  </p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-[var(--border-color)] bg-[var(--card-background)] p-6 futuristic-glow">
+<div class="w-12 h-12 rounded-lg bg-[var(--primary-color)]/20 flex items-center justify-center">
+<svg class="text-[var(--primary-color)]" fill="currentColor" height="28px" viewBox="0 0 256 256" width="28px" xmlns="http://www.w3.org/2000/svg"><path d="M213.66,181.66l-32,32a8,8,0,0,1-11.32-11.32L188.69,184H48a8,8,0,0,1,0-16H188.69l-18.35-18.34a8,8,0,0,1,11.32-11.32l32,32A8,8,0,0,1,213.66,181.66Zm-139.32-64a8,8,0,0,0,11.32-11.32L67.31,88H208a8,8,0,0,0,0-16H67.31L85.66,53.66A8,8,0,0,0,74.34,42.34l-32,32a8,8,0,0,0,0,11.32Z"></path></svg>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-[var(--text-primary)] text-xl font-bold leading-tight" style='font-family: "Space Grotesk", sans-serif;'>Scalable for Any Business</h3>
+<p class="text-[var(--text-secondary)] text-base font-normal leading-relaxed">
+                    Our solutions grow with you, adapting to your evolving needs without compromising performance.
+                  </p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-[var(--border-color)] bg-[var(--card-background)] p-6 futuristic-glow">
+<div class="w-12 h-12 rounded-lg bg-[var(--primary-color)]/20 flex items-center justify-center">
+<svg class="text-[var(--primary-color)]" fill="currentColor" height="28px" viewBox="0 0 256 256" width="28px" xmlns="http://www.w3.org/2000/svg"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm88-29.84q.06-2.16,0-4.32l14.92-18.64a8,8,0,0,0,1.48-7.06,107.21,107.21,0,0,0-10.88-26.25,8,8,0,0,0-6-3.93l-23.72-2.64q-1.48-1.56-3-3L186,40.54a8,8,0,0,0-3.94-6,107.71,107.71,0,0,0-26.25-10.87,8,8,0,0,0-7.06,1.49L130.16,40Q128,40,125.84,40L107.2,25.11a8,8,0,0,0-7.06-1.48A107.6,107.6,0,0,0,73.89,34.51a8,8,0,0,0-3.93,6L67.32,64.27q-1.56,1.49-3,3L40.54,70a8,8,0,0,0-6,3.94,107.71,107.71,0,0,0-10.87,26.25,8,8,0,0,0,1.49,7.06L40,125.84Q40,128,40,130.16L25.11,148.8a8,8,0,0,0-1.48,7.06,107.21,107.21,0,0,0,10.88,26.25,8,8,0,0,0,6,3.93l23.72,2.64q1.49,1.56,3,3L70,215.46a8,8,0,0,0,3.94,6,107.71,107.71,0,0,0,26.25,10.87,8,8,0,0,0,7.06-1.49L125.84,216q2.16.06,4.32,0l18.64,14.92a8,8,0,0,0,7.06,1.48,107.21,107.21,0,0,0,26.25-10.88,8,8,0,0,0,3.93-6l2.64-23.72q1.56-1.48,3-3L215.46,186a8,8,0,0,0,6-3.94,107.71,107.71,0,0,0,10.87-26.25,8,8,0,0,0-1.49-7.06Zm-16.1-6.5a73.93,73.93,0,0,1,0,8.68,8,8,0,0,0,1.74,5.48l14.19,17.73a91.57,91.57,0,0,1-6.23,15L187,173.11a8,8,0,0,0-5.1,2.64,74.11,74.11,0,0,1-6.14,6.14,8,8,0,0,0-2.64,5.1l-2.51,22.58a91.32,91.32,0,0,1-15,6.23l-17.74-14.19a8,8,0,0,0-5-1.75h-.48a73.93,73.93,0,0,1-8.68,0,8,8,0,0,0-5.48,1.74L100.45,215.8a91.57,91.57,0,0,1-15-6.23L82.89,187a8,8,0,0,0-2.64-5.1,74.11,74.11,0,0,1-6.14-6.14,8,8,0,0,0-5.1-2.64L46.43,170.6a91.32,91.32,0,0,1-6.23-15l14.19-17.74a8,8,0,0,0,1.74-5.48,73.93,73.93,0,0,1,0-8.68,8,8,0,0,0-1.74-5.48L40.2,100.45a91.57,91.57,0,0,1,6.23-15L69,82.89a8,8,0,0,0,5.1-2.64,74.11,74.11,0,0,1,6.14-6.14A8,8,0,0,0,82.89,69L85.4,46.43a91.32,91.32,0,0,1,15-6.23l17.74,14.19a8,8,0,0,0,5.48,1.74,73.93,73.93,0,0,1,8.68,0,8,8,0,0,0,5.48-1.74L155.55,40.2a91.57,91.57,0,0,1,15,6.23L173.11,69a8,8,0,0,0,2.64,5.1,74.11,74.11,0,0,1,6.14,6.14,8,8,0,0,0,5.1,2.64l22.58,2.51a91.32,91.32,0,0,1,6.23,15l-14.19,17.74A8,8,0,0,0,199.87,123.66Z"></path></svg>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-[var(--text-primary)] text-xl font-bold leading-tight" style='font-family: "Space Grotesk", sans-serif;'>Tailored to Your Needs</h3>
+<p class="text-[var(--text-secondary)] text-base font-normal leading-relaxed">
+                    Our AI solutions are customizable to fit your specific business requirements and strategic objectives.
+                  </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+</div>
+<style>
+    @keyframes spin-slow {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+    .animate-spin-slow {
+        animation: spin-slow 40s linear infinite;
+    }
+    .bg-grid-slate-700\/30 {
+        background-image: linear-gradient(var(--border-color) 1px, transparent 1px), linear-gradient(to right, var(--border-color) 1px, transparent 1px);
+        background-size: 3rem 3rem;
+    }
+  </style>
+
+</body></html>
